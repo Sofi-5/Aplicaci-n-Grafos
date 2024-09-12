@@ -1,25 +1,20 @@
 <!DOCTYPE html>
-<!-- Declara el tipo de documento como HTML5, lo que indica al navegador cómo interpretar el código. -->
 <html lang="es">
-<!-- Define el idioma del documento como español. -->
+<!--para definir el idioma del documento -->
 <head>
-    <!-- Sección de encabezado del documento HTML, donde se colocan los metadatos y enlaces a recursos externos. -->
-
+   
     <!-- Metadatos del documento -->
     <meta charset="UTF-8">
-    <!-- Especifica que la codificación de caracteres del documento es UTF-8, que es compatible con la mayoría de los caracteres internacionales. -->
+    <!-- Para compatibilidad con la mayoría de los caracteres internacionales. -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Configura el viewport para que el contenido se ajuste al ancho del dispositivo y establece el nivel de zoom inicial en 1.0. Esto es importante para la visualización en dispositivos móviles. -->
-    <title>Aplicacion Grafos</title>
-    <!-- Define el título de la página que aparece en la pestaña del navegador. -->
+    <!-- Configura el viewport para la visualización en dispositivos -->
+    <title>Aplicación Grafos</title>
 
     <!-- CSS de Bootstrap para estilos responsivos -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <!-- Enlaza el archivo CSS de Bootstrap para proporcionar estilos predefinidos y diseños responsivos. -->
 
     <!-- CSS personalizado -->
     <link rel="stylesheet" href="styles.css">
-    <!-- Enlaza un archivo CSS personalizado llamado "styles.css" para aplicar estilos específicos a la aplicación. -->
 
     <!-- Estilos para el contenedor del grafo -->
     <style>
@@ -39,7 +34,7 @@
     <div class="container mt-5">
         <!-- Contenedor principal de la página con un margen superior de 5 unidades de Bootstrap para separar el contenido de los bordes del viewport. -->
         
-        <h1 class="mb-4">Aplicacion Grafos</h1>
+        <h1 class="mb-4">Aplicación Grafos</h1>
         <!-- Título principal de la página con un margen inferior de 4 unidades de Bootstrap. -->
 
         <!-- Formulario para agregar nodos -->
@@ -56,7 +51,7 @@
                         <label for="nodeName">Nombre del Nodo</label>
                         <!-- Etiqueta que describe el campo para el nombre del nodo. -->
                         <input type="text" class="form-control" id="nodeName" required>
-                        <!-- Campo de entrada de texto para el nombre del nodo, con clase de Bootstrap para estilos. Identificado por "nodeName" y marcado como requerido. -->
+                        <!-- Campo de entrada de texto para el nombre del nodo, con clase de Bootstrap para estilos. Identificado por "nodeName" -->
                     </div>
                     <div class="form-group">
                         <!-- Grupo de formulario para el costo del nodo. -->
@@ -74,7 +69,7 @@
                     </div>
                     <!-- Botón para agregar el nodo -->
                     <button type="submit" class="btn btn-primary">Agregar Nodo</button>
-                    <!-- Botón de envío del formulario para agregar un nodo, con clase de Bootstrap para estilos. El texto del botón indica la acción de agregar un nodo. -->
+                    <!-- Botón de envío del formulario para agregar un nodo, con clase de Bootstrap para estilos -->
                 </form>
             </div>
         </div>
@@ -93,14 +88,14 @@
                         <label for="fromNode">Desde Nodo</label>
                         <!-- Etiqueta que describe el campo para seleccionar el nodo de origen. -->
                         <select class="form-control" id="fromNode" required></select>
-                        <!-- Menú desplegable para seleccionar el nodo de origen, con clase de Bootstrap para estilos y marcado como requerido. Las opciones se llenarán dinámicamente con JavaScript. -->
+                        <!-- Menú desplegable para seleccionar el nodo de origen.Las opciones se llenarán dinámicamente con js -->
                     </div>
                     <div class="form-group">
                         <!-- Grupo de formulario para seleccionar el nodo de destino. -->
                         <label for="toNode">Hasta Nodo</label>
                         <!-- Etiqueta que describe el campo para seleccionar el nodo de destino. -->
                         <select class="form-control" id="toNode" required></select>
-                        <!-- Menú desplegable para seleccionar el nodo de destino, con clase de Bootstrap para estilos y marcado como requerido. Las opciones se llenarán dinámicamente con JavaScript. -->
+                        <!-- Menú desplegable para seleccionar el nodo de destino -->
                     </div>
                     <div class="form-group">
                         <!-- Grupo de formulario para la opción de conexión bidireccional. -->
@@ -118,11 +113,11 @@
 
         <!-- Tabla para mostrar los nodos agregados -->
         <div class="card mb-4">
-            <!-- Tarjeta con un margen inferior de 4 unidades de Bootstrap para separar visualmente del contenido inferior. -->
+            <!-- tabla con un margen inferior de 4 unidades de Bootstrap para separar visualmente del contenido inferior. -->
             <div class="card-header">Nodos</div>
-            <!-- Encabezado de la tarjeta que indica que la sección muestra los nodos. -->
+            <!-- Encabezado de la tabla que indica que la sección muestra los nodos. -->
             <div class="card-body">
-                <!-- Cuerpo de la tarjeta que contiene la tabla de nodos. -->
+                <!-- Cuerpo de la tabla que contiene la tabla de nodos. -->
                 <table class="table table-striped">
                     <!-- Tabla con clases de Bootstrap para aplicar estilos y franjas alternas en las filas (striped). -->
                     <thead>
@@ -185,10 +180,10 @@
 
     <!-- Biblioteca de vis.js para la visualización de grafos -->
     <script src="https://cdn.jsdelivr.net/npm/vis-network@9.1.0/dist/vis-network.min.js"></script>
-    <!-- Enlaza la biblioteca "vis-network" que proporciona herramientas para la visualización de redes y grafos. -->
+    <!-- enlaza la biblioteca "vis-network" que proporciona herramientas para la visualización de redes y grafos. -->
 
     <!-- Archivo de JavaScript -->
     <script src="scripts.js"></script>
-    <!-- Enlaza un archivo de JavaScript personalizado llamado "scripts.js" que contiene la lógica para manejar la aplicación y la visualización del grafo. -->
+    <!-- enlaza un archivo de js que contiene la lógica para manejar la aplicación y la visualización del grafo. -->
 </body>
 </html>
